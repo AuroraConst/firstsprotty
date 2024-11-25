@@ -8,6 +8,9 @@ project/metals.sbt
 project/project
 project/target
 modules/client/target
+modules/client/package-lock.json
+target
+tmp
 .bsp/
 .history
 dist
