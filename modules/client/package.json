@@ -1,0 +1,25 @@
+{
+    "name": "scalajsclient",
+    "description": "Please enter a brief description here",
+    "type": "module",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "@com.axiommd/firstsprotty": "0.0.18",
+        "inversify": "~6.0.2",
+        "sprotty": "^1.0.0"
+    },
+    "devDependencies": {
+        "@scala-js/vite-plugin-scalajs": "^1.0.0",
+        "esbuild": "^0.19.4",
+        "typescript": "^4.9.5"
+    },
+    "scripts": {
+        "dev": "vite",
+        "preview": "vite preview"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "comments": "\"@com.axiommd/first\":\"^1.0.14\""
+}

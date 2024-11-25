@@ -1,0 +1,30 @@
+package com.axiommd
+import com.raquo.laminar.api.L.{*, given}
+import org.scalajs.dom
+
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSImport
+// import typings.comAxiommdFirst.*
+import typings.comAxiommdFirstsprotty.libMod.{container,f}
+import typings.comAxiommdFirstsprotty.libAurorasprottyModelSourceMod.graph
+import typings.sprotty.mod.{LocalModelSource,TYPES}
+import typings.sprottyProtocol.libModelMod.SModelRoot
+import typings.inversify.mod.Container
+import typings.sprottyProtocol.libModelMod.SGraph
+
+ 
+object Main :
+
+  def consoleOut(msg: String): Unit =
+    dom.console.log(s"%c $msg","background: #222; color: #bada55")
+
+  def main(args: Array[String]): Unit =
+    consoleOut("Hello, world!!!!!!!!!!!!!!!!!!!!!!")
+
+
+    val element = dom.document.querySelector("#app")
+    
+    renderOnDomContentLoaded(element,div({PageOutput()}))
+
+  
+
