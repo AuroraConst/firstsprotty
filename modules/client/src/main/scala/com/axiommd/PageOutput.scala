@@ -33,11 +33,11 @@ object PageOutput :
     val modelSource = c.get[LocalModelSource](TYPES.ModelSource)
     val sjsMouseListener = c.get[ServiceIdentifier[SjsMouseListener]](typings.comAxiommdFirstsprotty.libAurorasprottyTypesMod.MyTYPES.SjsMouseListener)
 
-    class GlobalSjsMouseListener extends MouseListener :
-      override def doubleClick(target: SModelElementImpl, event: MouseEvent): Action | Promise[Action] = 
-        Main.consoleOut(s"double click on $target !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")  
-        // println(s"double click on $target !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        Action("dblClickHandledinSJS")
+    // class GlobalSjsMouseListener extends MouseListener :
+    //   override def doubleClick(target: SModelElementImpl, event: MouseEvent): Action | Promise[Action] = 
+    //     Main.consoleOut(s"double click on $target !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")  
+    //     // println(s"double click on $target !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    //     Action("dblClickHandledinSJS")
     
 
     val sjsMouseHandler :js.UndefOr[
@@ -50,7 +50,7 @@ object PageOutput :
 
   //TODO [HERE]
     
-  sjsMouseListener.globaMouseListener_=(new GlobalSjsMouseListener())
+  // sjsMouseListener.globaMouseListener_=(new GlobalSjsMouseListener())
   
     Main.consoleOut(s"global handler has been set !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")  
     modelSource.setModel(g()) 
