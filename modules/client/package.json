@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "dependencies": {
-        "@com.axiommd/firstsprotty": "^0.0.25",
+        "@com.axiommd/firstsprotty": "^0.0.29",
         "inversify": "~6.0.2",
         "sprotty": "^1.0.0"
     },

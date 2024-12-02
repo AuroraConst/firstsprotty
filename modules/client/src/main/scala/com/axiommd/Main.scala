@@ -19,8 +19,6 @@ object Main :
     dom.console.log(s"%c $msg","background: #222; color: #bada55")
 
   def main(args: Array[String]): Unit =
-    consoleOut("Hello, world!!!!!!!!!!!!!!!!!!!!!!")
-
 
     val element = dom.document.querySelector("#app")
     

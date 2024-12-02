@@ -17,7 +17,7 @@ export default (containerId: string) => {
 
         //Custom Mouse Interaction
         bind(SjsMouseListener).toSelf().inSingletonScope();
-        bind(MyTYPES.SjsMouseListener).toService(SjsMouseListener);
+        // bind(MyTYPES.SjsMouseListener).toService(SjsMouseListener);
         bind(TYPES.MouseListener).toService(SjsMouseListener)
 
 
