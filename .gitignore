@@ -31,3 +31,4 @@ build/
 /tmp
 null
 modules/initts/package-lock.json
+package-lock.json
