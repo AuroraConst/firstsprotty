@@ -17,15 +17,11 @@ object PageOutput :
     val c = Container.c
     val modelSource = Container.modelSource
 
-
-    Main.consoleOut(s"!!!global Mouse Listener: ${Container.sjsMouseListener.globaMouseListener }")  
-    EventHandlers
-
-  //TODO [HERE]
-    
-  
-    
     modelSource.setModel(g()) 
+
+    EventHandlers //initialiES EVENT HANDLERS
+    
+    
     h1(s"Hello, world!!!!")
 
   def g ():SModelRoot = 

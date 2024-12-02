@@ -25,9 +25,7 @@ object EventHandlers :
 
   private  val mouseImplInstance = new SjsMouseListeenerImplementation   
 
-
-  
-
+  //set the global mouse listener with Sjs Implementation
   Container.sjsMouseListener.globaMouseListener_= ( mouseImplInstance)
 
 end EventHandlers  
