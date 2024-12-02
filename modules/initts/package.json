@@ -1,12 +1,12 @@
 {
     "name": "@com.axiommd/firstsprotty",
     "description": "Please enter a brief description here",
-    "version": "0.0.18",
+    "version": "0.0.21",
     "type": "module",
     "main": "index.js",
     "dependencies": {
         "inversify": "~6.0.2",
-        "reflect-metadata": "^0.1.13",  
+        "reflect-metadata": "^0.1.13",
         "sprotty": "^1.0.0"
     },
     "devDependencies": {
