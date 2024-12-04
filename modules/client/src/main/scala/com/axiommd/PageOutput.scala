@@ -41,8 +41,6 @@ object PageOutput :
       acc:+edge.asInstanceOf[SModelElement]
     }}
 
-    Main.consoleOut(s"size of  all nodes ${elemChildren.size}")
-    Main.consoleOut(s"size of  all elements ${elemEdges.size}")
     new Graph(elemEdges.toJSArray).asInstanceOf[SModelRoot]
 
 
