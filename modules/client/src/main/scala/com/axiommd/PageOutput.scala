@@ -30,11 +30,20 @@ object PageOutput :
       node.position = Option(Point(i%35*30,i/13*20)).orUndefined
       node.size = Option(Dimension(12,25)).orUndefined
       node
-    }.foldLeft(List.empty[SModelElement])((acc, i) => {
-      // val edge = new Edge(s"edge$i", s"node$i", s"node${i % 10 + 1}")
-      acc:+i.asInstanceOf[SModelElement]
+    }.foldLeft(List.empty[SModelElement])((acc, node) => {
+      
+      acc:+node.asInstanceOf[SModelElement]
     })
-    new Graph(elemChildren.toJSArray).asInstanceOf[SModelRoot]
+
+    val elemEdges = (0 to 134).map { i =>
+      new Edge(s"edge$i", s"task$i", s"task${i  + 1}")
+    }.foldLeft(elemChildren)  {(acc, edge) => {
+      acc:+edge.asInstanceOf[SModelElement]
+    }}
+
+    Main.consoleOut(s"size of  all nodes ${elemChildren.size}")
+    Main.consoleOut(s"size of  all elements ${elemEdges.size}")
+    new Graph(elemEdges.toJSArray).asInstanceOf[SModelRoot]
 
 
 
