@@ -27,8 +27,8 @@ object PageOutput :
   def g ():SModelRoot = 
     val elemChildren = (0 to 135).map { i =>
       val node = new Node(s"task$i",s"task$i")
-      node.position = Option(Point(i%35*20,i/13*20)).orUndefined
-      node.size = Option(Dimension(15,15)).orUndefined
+      node.position = Option(Point(i%35*30,i/13*20)).orUndefined
+      node.size = Option(Dimension(12,25)).orUndefined
       node
     }.foldLeft(List.empty[SModelElement])((acc, i) => {
       // val edge = new Edge(s"edge$i", s"node$i", s"node${i % 10 + 1}")
