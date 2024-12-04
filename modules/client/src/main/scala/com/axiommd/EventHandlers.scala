@@ -17,16 +17,15 @@ object EventHandlers :
   /**
     * customize mouse listener here
     */
-  private class SjsMouseListeenerImplementation extends MouseListener :
+  private object SjsMouseListeenerImplementation extends MouseListener :
 
     override def doubleClick(target: SModelElementImpl, event: dom.MouseEvent): js.Array[Action | js.Promise[Action]] = 
       alert(s"double Click: ${target.id} ${event.screenX}, ${event.screenY}")
       js.Array[Action | js.Promise[Action]]()
 
-  private  val mouseImplInstance = new SjsMouseListeenerImplementation   
 
   //set the global mouse listener with Sjs Implementation
-  Container.sjsMouseListener.globaMouseListener_= ( mouseImplInstance)
+  Container.sjsMouseListener.globaMouseListener_= ( SjsMouseListeenerImplementation)
 
 end EventHandlers  
 
