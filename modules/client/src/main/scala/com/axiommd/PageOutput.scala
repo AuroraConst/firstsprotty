@@ -35,13 +35,13 @@ object PageOutput :
       acc:+node.asInstanceOf[SModelElement]
     })
 
-    val elemEdges = (0 to 134).map { i =>
+    val nodesWithEdges = (0 to 134).map { i =>
       new Edge(s"edge$i", s"task$i", s"task${i  + 1}")
     }.foldLeft(elemChildren)  {(acc, edge) => {
       acc:+edge.asInstanceOf[SModelElement]
     }}
 
-    new Graph(elemEdges.toJSArray).asInstanceOf[SModelRoot]
+    new Graph(nodesWithEdges.toJSArray).asInstanceOf[SModelRoot]
 
 
 
