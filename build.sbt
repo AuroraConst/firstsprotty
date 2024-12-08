@@ -5,10 +5,10 @@ ThisBuild / version := "0.0.1"
 
 ThisBuild / scalaVersion := DependencyVersions.scala
 lazy val root = project.in(file("."))
-  .aggregate(client)
+  .aggregate(viteview)
 
 
-lazy val client = project.in(file("modules/client"))
+lazy val viteview = project.in(file("modules/viteview"))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .enablePlugins(ScalablyTypedConverterExternalNpmPlugin)
   .settings(
@@ -26,7 +26,7 @@ lazy val client = project.in(file("modules/client"))
     scalaJSLinkerConfig ~= {
       _.withModuleKind(ModuleKind.ESModule)
         .withModuleSplitStyle(
-          ModuleSplitStyle.SmallModulesFor(List("client")))
+          ModuleSplitStyle.SmallModulesFor(List("viteview")))
          // Use .mjs extension.
       //  .withOutputPatterns(OutputPatterns.fromJSFile("%s.mjs"))  
     },
