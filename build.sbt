@@ -1,5 +1,7 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 import org.scalajs.linker.interface.OutputPatterns
+import org.scalajs.jsenv.nodejs.NodeJSEnv
+
 ThisBuild / organization := "com.axiom"
 ThisBuild / version := "0.0.1"
 
@@ -44,6 +46,8 @@ lazy val viteview = project.in(file("modules/viteview"))
     libraryDependencies ++= Dependencies.scalajsdom.value,
     libraryDependencies ++= Dependencies.laminar.value,
     libraryDependencies ++= Dependencies.scalatest.value,
+    
+    jsEnv := new NodeJSEnv(),
 
     // Tell ScalablyTyped that we manage `npm install` ourselves
     externalNpm := baseDirectory.value,

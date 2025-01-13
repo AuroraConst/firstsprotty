@@ -16,8 +16,10 @@ object PageOutput :
   def apply() =
     val c = Container.c
     val modelSource = Container.modelSource
-
+    
+    
     modelSource.setModel(g()) 
+    Main.consoleOut("Hello World!!!!!!!!!!!! setting graph model")
 
     EventHandlers //initialiES EVENT HANDLERS
     

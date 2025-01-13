@@ -41,6 +41,6 @@ export default (containerId: string) => {
     loadDefaultModules(container);
     container.load(myModule);
     return container;
-}
+} 
 
 

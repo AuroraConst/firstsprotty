@@ -10,6 +10,7 @@ import { Container } from 'inversify';
 export * from './aurorasprotty/di.config.js'
 export * from './aurorasprotty/model-source.js'
 export * from './aurorasprotty/model.js'
+export * from './aurorasprotty/Types.js'
 export * from './aurorasprotty/views.js'
 
 document.addEventListener('DOMContentLoaded', () => {
