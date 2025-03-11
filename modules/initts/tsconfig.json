@@ -3,13 +3,14 @@
     "compilerOptions": {
       "target": "ES2022",
       "module": "NodeNext",
-      "moduleResolution": "nodenext",
+      "moduleResolution": "node",//I needed node resolution instead of NodeNext to deal with tsc compile errors where it was expecting explicit .js in exports
       "esModuleInterop": true,
       "sourceMap": true,
       "experimentalDecorators": true,
       "jsx": "react",
       "outDir": "./lib",
       "declaration": true,
+      "allowSyntheticDefaultImports": true,
       "types": [
         "reflect-metadata"
       ],

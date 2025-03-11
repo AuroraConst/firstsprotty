@@ -5,7 +5,7 @@ import typings.sprottyProtocol.libModelMod.SEdge
 import scala.scalajs.js
 import js.JSConverters.*
 import org.scalactic.Bool
-import typings.comAxiommdSecondsprotty.libAurorasprottyModelMod.TaskNode
+import typings.firstsprotty.libAurorasprottyModelMod.TaskNode
 
 class Node(_id:String, _name:String) 
   extends  TaskNode :

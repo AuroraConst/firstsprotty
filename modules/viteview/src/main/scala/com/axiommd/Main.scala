@@ -4,9 +4,8 @@ import org.scalajs.dom
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
-// import typings.comAxiommdFirst.*
-import typings.comAxiommdSecondsprotty.libMod.{container}
-import typings.comAxiommdSecondsprotty.libAurorasprottyModelSourceMod.graph
+import typings.firstsprotty.libMod.{container}
+import typings.firstsprotty.libAurorasprottyModelSourceMod.graph
 import typings.sprotty.mod.{LocalModelSource,TYPES}
 import typings.sprottyProtocol.libModelMod.SModelRoot
 import typings.inversify.libEsmMod.Container

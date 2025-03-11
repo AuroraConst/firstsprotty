@@ -1,7 +1,7 @@
 package com.axiommd
 
 
-import typings.comAxiommdSecondsprotty.libMod.container
+import typings.firstsprotty.libMod.container
 import typings.inversify.libEsmMod.Container
 import typings.sprotty.mod.{LocalModelSource,TYPES}
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import org.scalajs.dom
 import typings.sprottyProtocol.libActionsMod.Action
 
 
-import typings.comAxiommdSecondsprotty.libAurorasprottyHandlerMod.SjsMouseListener
+import typings.firstsprotty.libAurorasprottyHandlerMod.SjsMouseListener
 
 
 object Container :

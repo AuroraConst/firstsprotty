@@ -1,6 +1,6 @@
 package com.axiommd.graphcomponents
 
-import typings.comAxiommdSecondsprotty.libMod.container
+import typings.firstsprotty.libMod.container
 import typings.sprotty.libBaseTypesMod.TYPES
 import typings.sprotty.libModelSourceLocalModelSourceMod.LocalModelSource
 import typings.inversify.libEsmMod.Container
