@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export function init(): void {
 
-    const container = createContainer('sprotty-diagram');
+    const container = createContainer('sprotty-container');
     const modelSource = container.get<LocalModelSource>(TYPES.ModelSource);
     modelSource.setModel(graph);
 }
 
-export function container(): Container {
-    return createContainer('sprotty-diagram');
-}
+// export function container(): Container {
+//     return createContainer('sprotty-diagram');
+// }
 
 export function f():void {
   console.log("Hello World from function f")
