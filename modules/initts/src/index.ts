@@ -15,9 +15,7 @@ export * from './aurorasprotty/views.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     init();
-    // const container = createContainer('sprotty-diagram');
-    // const modelSource = container.get<LocalModelSource>(TYPES.ModelSource);
-    // modelSource.setModel(graph);
+    
 });
 
 
